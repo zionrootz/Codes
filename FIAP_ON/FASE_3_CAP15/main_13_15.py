@@ -27,6 +27,5 @@ textdict = json.loads(r.text)
 
 if textdict != msg_erro:
     print ("[ {} Logado! ]".format(textdict["nome"]))
-    #print("Senha_hash: {}".format(textdict["hash"]))
 else:
     print('[ {} ]'.format(textdict['erro']))
