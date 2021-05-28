@@ -1,4 +1,7 @@
-i from socket import *
+from typing import IO
+
+
+from socket import *
 
 servidor="127.0.0.1"
 porta=43210
