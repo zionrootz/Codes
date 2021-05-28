@@ -8,12 +8,19 @@ import json
 
 dictjson = {
 "rm": 87856,
-"senha": "vAwCNf2nbe"}
+"senha": "vAwCNf2nbe"
+}
+
+msg_erro = {"erro":"RM/senha inválidos"}
 
 r = requests.post('https://dc1-2021.glitch.me/getHash', dictjson)
 r.status_code
+
 textdict = json.loads(r.text)
 
-print("Status Code: {}".format(r.status_code))
-print("Nome: {}".format(textdict["nome"]))
-print("Senha_hash: {}".format(textdict["hash"]))
+#print("Status Code: {}".format(r.status_code))
+if textdict != msg_erro:
+    print("Nome: {}".format(textdict["nome"]))
+    print("Senha_hash: {}".format(textdict["hash"]))
+else:
+    print(textdict['erro'])
