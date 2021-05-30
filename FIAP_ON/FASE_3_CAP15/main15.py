@@ -6,14 +6,14 @@ import json
 #Senha: vAwCNf2nbe
 #Obs: Antes de começar a acessar a API, acesse https://dc1-2021.glitch.me/ com seu navegador web primeiro. Como o serviço é gratuito, ele fica 'dormente' quando ninguém está usando...
 
-dictjson = {
-"rm": 87856,
-"senha": "vAwCNf2nbe"
+my_rm_pass = { 
+    "rm": 87856, 
+    "senha": "vAwCNf2nbe"
 }
 
 msg_erro = {"erro":"RM/senha inválidos"}
 
-r = requests.post('https://dc1-2021.glitch.me/getHash', dictjson)
+r = requests.post('https://dc1-2021.glitch.me/getHash', my_rm_pass)
 r.status_code
 
 textdict = json.loads(r.text)
