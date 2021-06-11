@@ -2,7 +2,8 @@
 Este programa valida se uma frase digitada é um palindromo, 
  ou seja uma frase possui o mesmo sentindo quando lemos ela ao contrario
  
- '''
+'''
+ 
 
 frase = str(input('Digite uma frase: ')).strip().upper()
 palavras = frase.split()
