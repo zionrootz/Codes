@@ -10,8 +10,8 @@ for letra in range(len(junto) -1, -1, -1):
     inverso += junto[letra]
 
 if inverso == junto:
-    print('A FRASE DIGITADA É UM PALÍNDROMO')
+    print('\033[31mA FRASE DIGITADA É UM PALÍNDROMO')
 else:
-    print('A FRASE DIGITADA NÃO É UM PALÍNDROMO')
+    print('\033[32mA FRASE DIGITADA NÃO É UM PALÍNDROMO')
 print('FRASE NORMAL   :', junto)
 print('FRASE INVERTIDA:', inverso)
