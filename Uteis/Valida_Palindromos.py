@@ -3,7 +3,6 @@ Este programa valida se uma frase digitada é um palindromo,
  ou seja uma frase possui o mesmo sentindo quando lemos ela ao contrario
  
 '''
- 
 
 frase = str(input('Digite uma frase: ')).strip().upper()
 palavras = frase.split()
@@ -14,8 +13,8 @@ for letra in range(len(junto) -1, -1, -1):
     inverso += junto[letra]
 
 if inverso == junto:
-    print('\033[31mA FRASE DIGITADA É UM PALÍNDROMO')
+    print('A FRASE DIGITADA É UM PALÍNDROMO')
 else:
-    print('\033[32mA FRASE DIGITADA NÃO É UM PALÍNDROMO')
+    print('A FRASE DIGITADA NÃO É UM PALÍNDROMO')
 print('FRASE NORMAL   :', junto)
 print('FRASE INVERTIDA:', inverso)
