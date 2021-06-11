@@ -13,12 +13,12 @@ for num in numeros:
         if num % c == 0:
             ct +=1
 
-    if ct == 2:
+    if ct == 2 or num == 1:
         print('Número', num, 'é primo')
         valor=valor*num
-        ct = 0
     else:
         print('Número', num, 'não é primo')
-        ct = 0
+
+    ct = 0
 
 print("Valor final: ", valor)
