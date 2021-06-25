@@ -1,3 +1,4 @@
 {
-    "better-comments.highlightPlainText": true
+    "better-comments.highlightPlainText": true,
+    "python.pythonPath": "C:\\Python39\\python.exe"
 }
