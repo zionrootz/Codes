@@ -7,7 +7,7 @@ from threading import Timer
 data_atual = datetime.now().strftime('%d/%m/%Y')
 hora_atual = datetime.now().strftime('%H:%M')
 print(data_atual, hora_atual)
-print('Testando de velocidade de Internet...')
+print('Testando velocidade de Internet...')
 s = speedtest.Speedtest()
 velo_down = s.download(threads=None)*(10**-6)
 velo_up = s.upload(threads=None)*(10**-6)
