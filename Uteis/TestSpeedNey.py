@@ -11,8 +11,8 @@ print('Testando velocidade de Internet...')
 s = speedtest.Speedtest()
 velo_down = s.download(threads=None)*(10**-6)
 velo_up = s.upload(threads=None)*(10**-6)
-print('Velocidade de Download atual: {} Mbps'.format(round(velo_down)))
-print('Velocidade de Upload atual: {} Mbps'.format(round(velo_up)))
+print('Download atual: {} Mbps'.format(round(velo_down)))
+print('Upload atual..: {} Mbps'.format(round(velo_up)))
 
 
 # função para gravar dados da velocidade da internet em Excel
